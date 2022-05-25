@@ -1,9 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"github.com/ZayaSansanch/snake/game"
+	"github.com/ZayaSansanch/snake/screen"
 )
 
 func main() {
-	fmt.Println("Hello")
+	screen.Clear()
+	game.Loop()
+	screen.Restore()
 }
